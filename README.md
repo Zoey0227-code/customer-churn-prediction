@@ -1,55 +1,40 @@
-# customer-churn-prediction
-Python churn modeling with telecom data
-# Customer Churn Prediction
+Customer Churn Prediction
 
-A machine-learning project to predict which customers are most likely to churn (leave) based on demographic and usage data. Trained models can help telecom providers proactively address at-risk customers.
+A machine learning project that predicts which telecom customers are most likely to churn (leave) based on demographic and usage data. This project highlights skills in data cleaning, feature engineering, and predictive modeling to support customer retention strategies.
 
----
+🔑 Key Features
 
-## 📋 Table of Contents
+Data ingestion & preprocessing
 
-- [Project Overview](#project-overview)  
-- [Dataset](#dataset)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Modeling](#modeling)  
-- [Results](#results)  
-- [Folder Structure](#folder-structure)  
-- [Dependencies](#dependencies)  
-- [Contributing](#contributing)  
-- [License](#license)  
+Merged customer demographics and usage datasets on customer_id.
 
----
+Handled missing values, encoded categorical features, and scaled numerical features.
 
-## 🧐 Project Overview
+Modeling & evaluation
 
-Telecom companies lose revenue every time a subscriber cancels service. In this project, we:
+Built classification models including Logistic Regression and Random Forest.
 
-1. **Ingest & clean** two datasets:  
-   - Customer demographics (`telecom_demographics.csv`)  
-   - Usage statistics (`telecom_usage.csv`)  
-2. **Merge** them into a unified DataFrame.  
-3. **Preprocess** (handle missing values, encode categoricals, scale features).  
-4. **Train & evaluate** classification models (Logistic Regression, Random Forest) to predict churn.  
-5. **Analyze** feature importance and model performance to guide retention strategies.
+Compared performance using accuracy, precision, recall, and ROC-AUC.
 
----
+Insights
 
-## 📂 Dataset
+Identified high-impact factors such as contract type, tenure, and data usage.
 
-- **`telecom_demographics.csv`**  
-  Contains customer ID, age, gender, region, tenure, contract type, etc.
+Provided interpretable results to guide retention campaigns and reduce churn.
 
-- **`telecom_usage.csv`**  
-  Contains customer ID, monthly minutes, data usage, number of calls, etc.
+🛠️ Tech Stack
 
-> **Note:** Combine on `customer_id` to build a complete record for each customer.
+Python (pandas, scikit-learn, NumPy, Matplotlib, Seaborn)
 
----
+Jupyter Notebook for analysis and visualization
 
-## 🚀 Installation
+📂 Project Structure
+telecom_demographics.csv   # Customer demographic info
+telecom_usage.csv          # Customer usage data
+customer_churn.ipynb       # End-to-end analysis and modeling notebook
 
-1. **Clone this repo**  
-   ```bash
-   git clone https://github.com/Zoey0227-code/customer-churn-prediction.git
-   cd customer-churn-prediction
+🚀 Outcome
+
+✔ Demonstrated end-to-end machine learning workflow (data → model → insights)
+✔ Produced interpretable models that help telecoms retain high-risk customers
+✔ Showcased ability to connect data science methods with real business impact
